@@ -1,21 +1,17 @@
 <?xml version="1.0"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>io.trino</groupId>
         <artifactId>trino-root</artifactId>
-        <version>352</version>
-        <relativePath>../../pom.xml</relativePath>
+        <version>370</version>
     </parent>
 
     <artifactId>trino-db2</artifactId>
-    <description>Trino - DB2 Connector</description>
+    <description>Trino - Db2 Connector</description>
     <packaging>trino-plugin</packaging>
-
-    <properties>
-        <air.main.basedir>${project.parent.basedir}</air.main.basedir>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -54,7 +50,7 @@
             <artifactId>validation-api</artifactId>
         </dependency>
 
-        <!-- Trino SPI -->
+        <!-- trino SPI -->
         <dependency>
             <groupId>io.trino</groupId>
             <artifactId>trino-spi</artifactId>
@@ -88,14 +84,7 @@
 
         <dependency>
             <groupId>io.trino</groupId>
-            <artifactId>trino-main</artifactId>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.trino</groupId>
-            <artifactId>trino-testing</artifactId>
+            <artifactId>trino-tests</artifactId>
             <scope>test</scope>
         </dependency>
 

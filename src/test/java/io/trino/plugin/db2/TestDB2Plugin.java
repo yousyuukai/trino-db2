@@ -30,6 +30,6 @@ public class TestDB2Plugin
         Plugin plugin = new DB2Plugin();
         ConnectorFactory factory = getOnlyElement(plugin.getConnectorFactories());
         assertEquals(factory.getName(), "db2");
-        factory.create("test", ImmutableMap.of("connection-url", "jdbc:db2://10.0.75.1:50000/testdb"), new TestingConnectorContext());
+        factory.create("test", ImmutableMap.of("connection-url", "jdbc:db2:test"), new TestingConnectorContext());
     }
 }

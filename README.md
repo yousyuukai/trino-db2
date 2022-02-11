@@ -23,8 +23,8 @@ rm /data/trino/plugin/db2/trino-mysql*
 ```
 
 ```
-docker cp D:\trino-db2-352.jar trino:/data/trino/plugin/db2
-docker cp D:\trino-db2-352-services.jar trino:/data/trino/plugin/db2
+docker cp D:\trino-db2-370.jar trino:/data/trino/plugin/db2
+docker cp D:\trino-db2-370-services.jar trino:/data/trino/plugin/db2
 docker cp D:\db2jcc-db2jcc4.jar trino:/data/trino/plugin/db2
 ```
 
